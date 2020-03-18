@@ -1,0 +1,28 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "firstName": "one",
+      "lastName": "yi",
+      "career": "student",
+      "age": 10,
+      "nationality": "US"
+    },
+    {
+      "id": 5,
+      "firstName": "five",
+      "lastName": "wu",
+      "career": "Professor",
+      "age": 50,
+      "nationality": "UK"
+    },
+    {
+      "id": 3,
+      "firstName": "three",
+      "lastName": "san",
+      "career": "developer",
+      "age": 30,
+      "nationality": "CHN"
+    }
+  ]
+}
