@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UsersModule } from './modules/users/users.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { UsersModule } from './modules/users/users.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     UsersModule
   ],
   providers: [],
