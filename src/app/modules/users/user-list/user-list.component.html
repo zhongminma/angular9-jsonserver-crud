@@ -2,13 +2,14 @@
   <tr>
     <th><h4>first name</h4></th>
     <th><h4>last name</h4></th>
+    <th><h4>career</h4></th>
     <th><h4>Edit</h4></th>
     <th><h4>Delete</h4></th>
   </tr>
   <tr *ngFor="let u of allUser">
     <td>{{ u.firstName }}</td>
     <td>{{ u.lastName }}</td>
-    <td>{{ u.carrer }}</td>
+    <td>{{ u.career }}</td>
     <td><h4><a><i class="fa fa-edit"></i></a></h4></td>
     <td><h4><a><i class="fa fa-trash"></i></a></h4></td>
   </tr>

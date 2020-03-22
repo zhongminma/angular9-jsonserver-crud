@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { User } from 'src/app/model/user.model';
 
 const headerOption = {
@@ -9,7 +9,6 @@ const headerOption = {
 @Injectable()
 export class UserService {
   baseUrl: string = "http://localhost:3000/User";
-  allUser: User[];
 
   constructor(private http: HttpClient) { }
 
