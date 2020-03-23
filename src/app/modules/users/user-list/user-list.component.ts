@@ -20,4 +20,7 @@ export class UserListComponent implements OnInit {
       this.allUser = res;
     });
   }
+  edit(user) {
+    this.userService.currentUser = Object.assign({}, user);
+  }
 }

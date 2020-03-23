@@ -24,5 +24,12 @@ export class UserService {
   getAllUsers(): Observable<User[]>{
     return this.http.get<User[]>(this.baseUrl);
   }
+  createUser(u: User) :Observable<User> {
+    return this.http.post<User>(this.baseUrl, u, headerOption);
+  }
+  updateUser(u: User) :Observable<User> {
+    return this.http.put<User>(this.baseUrl+'/'+u.id, u, headerOption);
+  }
+
 }
 

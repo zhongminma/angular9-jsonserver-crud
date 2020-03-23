@@ -10,7 +10,9 @@
     <td>{{ u.firstName }}</td>
     <td>{{ u.lastName }}</td>
     <td>{{ u.career }}</td>
-    <td><h4><a><i class="fa fa-edit"></i></a></h4></td>
+    <td><h4>
+      <a class="btn" (click)="edit(u)"><i class="fa fa-edit"></i></a>
+    </h4></td>
     <td><h4><a><i class="fa fa-trash"></i></a></h4></td>
   </tr>
 </table>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../shared/user.service';
+import { User } from 'src/app/model/user.model';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
   }
-
+  createAndUpdate(user: User) {
+    console.log(user);
+    if(user.id !== null) { //update
+      this.updateUser(user);
+    } else {  // create
+      this.createUser(user)
+    }
+  }
+  createUser (u: User) {
+    this.userService.createUser(u).subscribe();
+  }
+  updateUser (u: User) {
+    this.userService.updateUser(u).subscribe();
+  }
 }

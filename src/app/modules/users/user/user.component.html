@@ -1,28 +1,28 @@
 <div class="user-form">
   <div class="row">
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="First Name"/>
+      <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="userService.currentUser.firstName"/>
     </div>
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="Last Name" />
+      <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="userService.currentUser.lastName"/>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12 form-group">
-      <input type="text" class="form-control" placeholder="Carrer" />
+      <input type="text" class="form-control" placeholder="Career" [(ngModel)]="userService.currentUser.career"/>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="Age" />
+      <input type="text" class="form-control" placeholder="Age" [(ngModel)]="userService.currentUser.age"/>
     </div>
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="Nationality" />
+      <input type="text" class="form-control" placeholder="Nationality" [(ngModel)]="userService.currentUser.nationality"/>
     </div>
   </div>
   <div class="row">
     <div class="col-md-8">
-      <button class="btn btn-success btn-block btn-lg">
+      <button class="btn btn-success btn-block btn-lg" (click)="createAndUpdate(userService.currentUser)">
         <i class="fa fa-save"></i> Save User
       </button>
     </div>
