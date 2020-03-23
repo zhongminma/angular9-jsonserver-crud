@@ -4,7 +4,7 @@
       "id": 1,
       "firstName": "one",
       "lastName": "yi",
-      "career": "student",
+      "career": "IT",
       "age": 10,
       "nationality": "US"
     },
@@ -23,6 +23,14 @@
       "career": "developer",
       "age": 30,
       "nationality": "CHN"
+    },
+    {
+      "id": 6,
+      "firstName": "four",
+      "lastName": "shi",
+      "career": "manager",
+      "age": "35",
+      "nationality": "chn"
     }
   ]
 }

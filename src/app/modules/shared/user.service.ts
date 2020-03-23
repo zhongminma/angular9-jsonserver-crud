@@ -10,6 +10,15 @@ const headerOption = {
 export class UserService {
   baseUrl: string = "http://localhost:3000/User";
 
+  currentUser: User = {
+    id: null,
+    firstName: '',
+    lastName: '',
+    career: '',
+    age: 0,
+    nationality: ''
+  }
+
   constructor(private http: HttpClient) { }
 
   getAllUsers(): Observable<User[]>{
