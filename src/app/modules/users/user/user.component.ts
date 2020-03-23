@@ -27,4 +27,15 @@ export class UserComponent implements OnInit {
   updateUser (u: User) {
     this.userService.updateUser(u).subscribe();
   }
+
+  resetUser(){
+    this.userService.currentUser = {
+      id: null,
+      firstName: '',
+      lastName: '',
+      career: '',
+      age: 0,
+      nationality: ''
+    }
+  }
 }
