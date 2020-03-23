@@ -23,4 +23,9 @@ export class UserListComponent implements OnInit {
   edit(user) {
     this.userService.currentUser = Object.assign({}, user);
   }
+  deleteUser(id) {
+    this.userService.deleteUser(id).subscribe(res => {
+      this.getAllUser();
+    });
+  }
 }

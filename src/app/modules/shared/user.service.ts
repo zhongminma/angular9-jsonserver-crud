@@ -30,6 +30,9 @@ export class UserService {
   updateUser(u: User) :Observable<User> {
     return this.http.put<User>(this.baseUrl+'/'+u.id, u, headerOption);
   }
+  deleteUser(id: String): Observable<User> {
+    return this.http.delete<User>(this.baseUrl + '/' + id, headerOption);
+  }
 
 }
 
